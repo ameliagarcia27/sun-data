@@ -10,11 +10,7 @@
 }
 
 .home-body h1 {
-    color: black;
-}
-
-.full {
-    background-color: #B20032;
+    color: white;
 }
 
 .directory {
@@ -28,13 +24,13 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-nav ul {
+header nav ul {
     list-style: none;
     padding: 0;
     display: flex;          
     gap: 30px;
     font-size: 15px;
-    color: black;
+    color: white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-right: 10px;
 }
@@ -55,18 +51,49 @@ a:hover {
 
 .foreground {
     background-color: white;
-    max-width: 900px;
     margin: 20px auto;
     padding: 20px;
+    margin-left: 260px;
+}
+
+.foreground h1 {
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 5px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    background-color: #B20032;
+    padding: 20px;
 }
 
 header h1 {
     font-size: 20px;
     margin-left: 10px;
+    color: white;
 }
+
+.sidebar {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    padding: 20px;
+    background-color: white;
+    border-right: 1px solid #ddd;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 30px;
+    color:#B20032;
+
+}
+
