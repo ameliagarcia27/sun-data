@@ -11,11 +11,14 @@
 <body class="full">
     <header> 
         <h1 class="title">Class of 2026 in Numbers</h1>
-        <nav>
+        <button class="menu-toggle" aria-label="Toggle menu">
+            ☰
+        </button>
+        <nav class="main-nav">
             <ul>
                 <li><a href=demographics.html>DEMOGRAPHICS</a></li>
                 <li><a href=academics.html>ACADEMICS</a></li>
-                <li><a href=at-cornell.html>STUDENT LI</a></li>
+                <li><a href=at-cornell.html>STUDENT LIFE</a></li>
                 <li><a href=future.html>POST-GRAD</a></li>
                 <li><a href=about.html>METHODOLOGY</a></li>
             </ul>
@@ -50,5 +53,14 @@
         <p>tktktkktktktktkktt</p>
         </div>
     </div>
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.main-nav');
+
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
 
 </body>

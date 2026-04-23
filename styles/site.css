@@ -97,3 +97,61 @@ header h1 {
 
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle:hover {
+        color: grey;
+    }
+
+    header {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .main-nav {
+        display: none;
+        width: 100%;
+    }
+
+    .main-nav.active {
+        display: block;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 0;
+        background-color: #B20032;
+        padding: 0;
+        margin: 0;
+    }
+
+    .main-nav li {
+        border-top: 1px solid black;
+        text-align: center;
+        padding: 12px 0;
+    }
+
+    .foreground {
+        margin-left: 0;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        border-right: none;
+    }
+}
