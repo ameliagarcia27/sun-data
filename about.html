@@ -9,9 +9,13 @@
 </head>
 
 <body class="full">
+    <div class="top">
     <header> 
-        <h1 class="title">Class of 2026 in Numbers</h1>
-        <nav>
+        <h1 class="title">LOGO | Class of 2026 in Numbers</h1>
+        <button class="menu-toggle" aria-label="Toggle menu">
+            ☰
+        </button>
+        <nav class="main-nav">
             <ul>
                 <li><a href=demographics.html>DEMOGRAPHICS</a></li>
                 <li><a href=academics.html>ACADEMICS</a></li>
@@ -21,8 +25,20 @@
             </ul>
         </nav>
     </header>
+    </div>
+    <aside class="sidebar">
+        <nav>
+            <h3>EXPLORE</h3>
+            <hr>
+            <ul>
+                <li><a href="#section1">Introduction</a></li>
+                <li><a href="#section2">Advertising</a></li>
+                <li><a href="#section3">Privacy</a></li>
+            </ul>
+        </nav>
+    </aside>
     <div class="foreground">
-        <h1>METHODOLOGY</h1>
+        <h1 id="section1">METHODOLOGY</h1>
         <hr>
         <p>
             Survey questions were developed to understand more about the Class of 2026 in four main areas:
@@ -36,11 +52,11 @@
         <p>
           From there, we conducted bivariate analysis to take a closer look at trends across these categories, looking at how different traits, backgrounds, and experiences interact with each other.  
         </p>
-        <h2>Advertising</h2>
+        <h2 id="section2">Advertising</h2>
         <p>
             The survey was live and accepted responses from April 20, 2026 to May 1, 2026. During this time, The Sun solicited student responses through a number of marketing avenues. The survey was shared via our newsletter, website, and social media. Further, the survey was shared within student groups through platforms such as Slack. [add]
         </p>
-        <h2>A Note on Privacy</h2>
+        <h2 id="section3">A Note on Privacy</h2>
         <p>
             The Cornell Daily Sun respects your privacy and is committed to keeping your personal data safe. In this survey, no names or emails were collected to ensure that your responses are not traced back to you. Our raw collected data, collected by the survey and handled by The Sun’s Data Department, solely contains your answers to questions, with no meta data collected.
         </p>
@@ -48,4 +64,15 @@
 
         </p>
     </div>
+    <footer>
+        tkkttktk
+    </footer>
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.main-nav');
+
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>

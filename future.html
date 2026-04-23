@@ -9,9 +9,13 @@
 </head>
 
 <body class="full">
+    <div class="top">
     <header> 
-        <h1 class="title">Class of 2026 in Numbers</h1>
-        <nav>
+        <h1 class="title">LOGO | Class of 2026 in Numbers</h1>
+        <button class="menu-toggle" aria-label="Toggle menu">
+            ☰
+        </button>
+        <nav class="main-nav">
             <ul>
                 <li><a href=demographics.html>DEMOGRAPHICS</a></li>
                 <li><a href=academics.html>ACADEMICS</a></li>
@@ -21,6 +25,7 @@
             </ul>
         </nav>
     </header>
+    </div>
     <div class="foreground">
         <h1>POST-GRAD</h1>
         <hr>
@@ -36,5 +41,15 @@
             </nav>
         </aside>
     </div>
+    <footer>
+        
+    </footer>
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.main-nav');
 
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
