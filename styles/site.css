@@ -61,10 +61,16 @@ a:hover {
 
 .foreground h1 {
     text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Times New Roman', serif;
     letter-spacing: 5px;
+    margin-top: -40px;
+    margin-bottom: 0;
+    padding-top: 0;
 }
-
+body {
+  margin: 0;
+  padding: 0;
+}
 .top {
     position: fixed;
     width: 100%;
@@ -90,7 +96,7 @@ header h1 {
     position: fixed;
     top: 100px;
     left: 0;
-    width: 220px;
+    width: 200px;
     height: 100%;
     padding: 20px;
     background-color: white;
@@ -123,6 +129,25 @@ footer {
     left: 0;
     right: 0;
     color: white; 
+}
+
+.card {
+    display: flex;
+    width:100% !important;
+    gap: 10px;
+    justify-content: center;
+}
+
+.box {
+    flex: 1;
+}
+
+.box iframe {
+  min-width: 0;
+}
+
+.box p {
+    padding-right: 30px !important;
 }
 
 @media (max-width: 900px) {
